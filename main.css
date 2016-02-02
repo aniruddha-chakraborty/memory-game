@@ -1,0 +1,106 @@
+body {
+	background-color: #52BF73;
+}
+
+.bottom {
+	float: bottom;
+}
+
+.timer {
+
+	font-size: 100	px;
+	margin-bottom: 1%;
+	float: right;
+	margin-right: 5%;
+}
+
+.game {
+
+		margin-top: 5%;
+
+}
+
+.tiles-1 {
+
+		background-color: #36A5D1;
+		float: left;
+		margin-top: 3%;
+		margin-left: 5%;
+		padding: 5%;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius:5px;
+}
+.tiles-2 {
+
+		background-color: #36A5D1;
+		float: left;
+		margin-top: 3%;
+		margin-left: 5%;
+		padding: 5%;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius:5px;
+}
+
+.tiles-3 {
+
+		background-color: #36A5D1;
+		float: left;
+		margin-top: 3%;
+		margin-left: 5%;
+		padding: 5%;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius:5px;
+}
+
+.tiles-4 {
+
+		background-color: #36A5D1;
+		float: left;
+		margin-top: 3%;
+		margin-left: 5%;
+		padding: 5%;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius:5px;
+}
+
+.tiles-5 {
+
+		background-color: #36A5D1;
+		float: left;
+		margin-top: 3%;
+		margin-left: 5%;
+		padding: 5%;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius:5px;
+}
+
+.tiles-6 {
+
+		background-color: #36A5D1;
+		float: left;
+		margin-top: 3%;
+		margin-left: 5%;
+		padding: 5%;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius:5px;
+}
+
+.changed-tiles {
+
+			background-color: #D16D36;
+			float: left;
+			margin-top: 5%;
+			margin-left: 5%;
+			padding: 5%;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius:5px;
+
+
+}
