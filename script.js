@@ -91,8 +91,9 @@ var Game = {
 
             for (var i = 0; i < array.length; i++) {
 
-                  var id = 'image_'+i+;
-                  document.getElementById(id).getAttribute('src');
+                  var id = 'image_'+i;
+                  var card = document.getElementById(id).getAttribute('main_card');
+                  document.getElementById(id).setAttribute('src','cards/'+array[i]+'.png');
 
             }
       },
