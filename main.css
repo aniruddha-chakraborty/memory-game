@@ -1,12 +1,40 @@
 body {
+
 	background-color: #52BF73;
+
+}
+
+.timer {
+
+	margin-top: 100px;
+	text-align: right;
+	position: relative;
+	top: -40px;
+	right: 40px;
+
+}
+.card {
+
+	padding: 10px;
+	float: left;
+	text-align: center;
+
+}
+
+
+.image {
+		height: 150px;
+		width: 120px;
 }
 
 .row {
-	
+		float: left;
+		white-space: inherit;
+		display: table-cell;
+		vertical-align: middle;
+		white-space: pre;
 }
 
-.image {
-		height: 7%;
-		width: 7%;
+.game {
+	margin-left: 75px;
 }

@@ -1,8 +1,122 @@
-var random =  Math.floor(Math.random() * (67 - 1 + 1)) + 1;
-var cards = [' 1.png', ' 2.png', ' 3.png', ' 4.png', ' 5.png', ' 6.png', ' 7.png', ' 8.png', ' 9.png', ' 10.png', ' 11.png', ' 12.png', ' 13.png', ' 14.png', ' 15.png', ' 16.png',
-              ' 17.png', ' 18.png', ' 19.png', ' 20.png', ' 21.png', ' 22.png', ' 23.png', ' 24.png', ' 25.png', ' 26.png', ' 27.png', ' 28.png', ' 29.png', ' 30.png', ' 31.png',
-               ' 32.png', ' 33.png', ' 34.png', ' 35.png', ' 36.png', ' 37.png', ' 38.png', ' 39.png', ' 40.png', ' 41.png', ' 42.png', ' 43.png', ' 44.png', ' 45.png', ' 46.png',
-                ' 47.png', ' 48.png', ' 49.png', ' 50.png', ' 51.png', ' 52.png', ' 53.png', ' 54.png', ' 55.png', ' 56.png', ' 57.png', ' 58.png', ' 59.png', ' 60.png', ' 61.png',
-                ' 62.png', ' 63.png', ' 64.png', ' 65.png', ' 66.png', ' 67.png'];
+var Game = {
 
-  
+      /**
+       * It will generate game cards
+       * @param  {[int]} limit
+       * @return {[array]} [list of number which is a part of image link]
+       */
+
+      random: function (limit) {
+
+          var data = Math.floor(Math.random() * (67 - 1 + 1)) + 1;
+          var array = [];
+            for (var i = 0; i < 5000; i++) {
+
+                if (array.indexOf(i) !== undefined) {
+                    array = i;
+                }
+
+                if (array.length == limit) {
+                    break;
+                }
+            }
+
+          return array;
+      },
+
+      /**
+       * Get all cards and ready for outpt
+       * @param  {[array]} array
+       * @return {[HTML]}
+       */
+
+      generate: function (array) {
+
+        var output = '';
+        var i = 1;
+
+        while ( i <= array.length ) {
+
+          output += '<div class="row">';
+          output += '<div class="card"><img src="cards/0.png" alt="" class="image" id="image_'+i+'" main_card="'+i+'"/></div>';
+          output += '<div class="card"><img src="cards/0.png" alt="" class="image" id="image_'+(++i)+'" main_card="'+ (++i) +'"/></div>';
+          output += '<div class="card"><img src="cards/0.png" alt="" class="image" id="image_'+(2+i)+'" main_card="'+(2+i)+'"/></div>';
+          output += '</div>';
+
+          i+2;
+        }
+
+        return output;
+
+      },
+
+      /**
+       * @param  {[markup]} output [description]
+       */
+
+      render: function (output) {
+
+          document.getElementById('game').innerHTML = output;
+      },
+
+      /**
+       * The app will give this ammount of time to memorize those cards
+       * @return {[txt]} [time]
+       */
+
+      memoryTime: function (timerEnds) {
+
+          var second = parseInt(document.getElementById('second'));
+
+          var timer = setTimeout(function () {
+
+              if (id == timerEnds) {
+
+                  clearInterval(timer);
+                  break;
+
+              } else {
+                  // increment
+                  document.getElementById('second').innerHTML = ++second;
+              }
+
+          } , 1000);
+      },
+
+      /**
+       * Flip all cards and show the blank part
+       */
+
+      flipWholeBlank: function (array) {
+
+            for (var i = 0; i < array.length; i++) {
+
+                  var id = 'image_'+i+;
+                  document.getElementById(id).getAttribute('src');
+
+            }
+      },
+
+      /**
+       * Flip all cards . show thier real face
+       */
+
+      flipWholeCard: function () {
+
+
+      },
+
+      flipSingleCard: function () {
+
+      },
+
+      flipBlankCard: function () {
+
+
+
+      }
+};
+
+
+var Game = Object.create(Game);
+Game.memoryTime(30);
